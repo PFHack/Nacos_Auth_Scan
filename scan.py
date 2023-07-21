@@ -35,7 +35,7 @@ nacos_scan_banner = f"""
                                                                                                       
 {red}NacosAuthScan is under development, please update before each use!{end}
 """
-zm = zoomeye.ZoomEye(api_key="D119BD52-8C7E-B32Db-8A4D-FdaeA6c3bb9")
+zm = zoomeye.ZoomEye(api_key="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 data_queue = []
 
 head = {
