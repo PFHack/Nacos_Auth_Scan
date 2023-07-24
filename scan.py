@@ -35,7 +35,7 @@ nacos_scan_banner = f"""
                                                                                                       
 {red}NacosAuthScan is under development, please update before each use!{end}
 """
-zm = zoomeye.ZoomEye(api_key="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
+zm = zoomeye.ZoomEye(api_key="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 data_queue = []
 
 head = {
@@ -128,7 +128,7 @@ class ZScan:
         """ get_goal_from_zoom """
         page = 1
         try:
-            zm.dork_search('app:"Alibaba Nacos" +country:"CN" +subdivisions:"四川"', page)
+            zm.dork_search('app:"Alibaba Nacos" +country:"CN"', page)
             for ip in zm.dork_filter("ip,port"):
                 data_queue.append({'ip': str(ip[0]), 'port': str(ip[1])})  # 将采集的结果放入data_queue中
         except Exception as e:
